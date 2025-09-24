@@ -259,9 +259,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     window.requestAnimationFrame(step);
   
-    carousel.addEventListener('mouseenter', ()=>{ paused = true; });
+    carousel.addEventListener('mouseenter', ()=>{ paused = false; });
     carousel.addEventListener('mouseleave', ()=>{ paused = false; lastTimestamp = null; });
-    carousel.addEventListener('touchstart', ()=>{ paused = true; }, {passive:true});
+    carousel.addEventListener('touchstart', ()=>{ paused = false; }, {passive:true});
     carousel.addEventListener('touchend', ()=>{ paused = false; lastTimestamp = null; }, {passive:true});
   })();
 
