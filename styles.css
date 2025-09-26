@@ -400,10 +400,7 @@ a{
   
   
   /* Profile */
-  .profile-image {
-    grid-column: span 12;
-    grid-column: span 4 / span 4;
-  }
+ 
   .profile-image {
    
     width: 100%;
@@ -419,6 +416,14 @@ a{
   }
   
   /* Experience Section */
+.section-formation{
+    grid-column: span 12;
+    grid-column: 5 / span 8;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
   .experience-section {
     grid-column: span 12;
     grid-column: 5 / span 8;
@@ -426,11 +431,15 @@ a{
     flex-direction: column;
     gap: 1.5rem;
   }
+
+  .fomation{
+    margin: none;
+  }
   
   .card-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
   }
   .card-row.three {
     grid-template-columns: repeat(3, 1fr);
@@ -458,6 +467,14 @@ a{
     margin: 0;
   }
   .logo {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .logo-experience {
     width: 64px;
     height: 64px;
     border-radius: 8px;
@@ -523,7 +540,7 @@ a{
   }
   .bio p {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.5;
 
   }
