@@ -23,6 +23,7 @@ p{
 .section-container {
     max-width: 1440px;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 /* Header */
@@ -38,7 +39,7 @@ p{
 }
 
 .nav {
-    height: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
 }
@@ -153,12 +154,6 @@ a{
 .text-content{
     min-width: 340px;
 }
-
-
-
-
-
-
 
 
 .hero-content {
@@ -295,12 +290,23 @@ a{
 }
 
 .work-item {
-    width: 664px;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 16px;
     align-items: flex-start;
 }
+
+@media (max-width: 996px) {
+    .work-item {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+    
+  }
 
 .work-preview {
     width: 100%;
@@ -354,6 +360,16 @@ a{
     border-radius: 9999px;
     font-size: 14px;
     font-weight: 400;
+}
+
+.tag-UX {
+    background-color: #e0f2fe76;
+    color: #0284c7;
+}
+
+.tag-UI {
+    background-color: #9df0764c;
+    color: #0284c7;
 }
 
 .tag-react {
@@ -822,7 +838,7 @@ a{
 
 .contact-section {
     background: #23719f;
-    padding: 80px 0 120px;
+    padding: 80px 24px 120px;
 }
 
 .contact-form {
@@ -893,11 +909,11 @@ a{
     }
   
     .card-row {
-      grid-template-columns: 1fr; /* las cards en columna */
+      grid-template-columns: 2fr; /* las cards en columna */
     }
   
     .card-row.three {
-      grid-template-columns: 1fr; /* lo mismo para las de 3 columnas */
+      grid-template-columns: 2fr; /* lo mismo para las de 3 columnas */
     }
   }
   
@@ -917,4 +933,16 @@ a{
 
   .conect{
     color: #FFFFFF;
+  }
+
+
+  @media (max-width: 768px) {
+    .logo-text {
+      font-size: 28px; /* más pequeño en tablet */
+    }
+  
+  @media (max-width: 480px) {
+    .logo-text {
+      font-size: 20px; /* aún más pequeño en móvil */
+    }
   }
