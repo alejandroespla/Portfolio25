@@ -243,7 +243,8 @@
                             Hi, I’m Alejandro Esplá, a <b>senior UX/UI designer and front-end developer</b> from Playa
                             Honda,
                             Cartagena. With <b>7+ years of experience</b>, I’ve helped shape products across different
-                            industries, moving from hands-on design to <b>leading teams</b> and defining <b>product vision</b>.
+                            industries, moving from hands-on design to <b>leading teams</b> and defining <b>product
+                                vision</b>.
                         </p>
 
                         <p class="hero-description">
@@ -333,13 +334,13 @@
                             <span class="year">2013</span>
                             <span class="tag">DEGREE</span>
                         </div>
-                </div>
+                    </div>
 
 
 
-                <!-- Row 2 -->
-                <div class="card-row three">
-                    
+                    <!-- Row 2 -->
+                    <div class="card-row three">
+
                     </div>
                 </div>
 
@@ -461,15 +462,15 @@
             <h2 class="section-title conect">Let's work together</h2>
             <p class="section-subtitle conect">Fill out the form below and I'll get back to you as soon as possible.</p>
 
-            <form id="contactForm" class="contact-form">
+            <form id="contactForm" class="contact-form" novalidate>
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+                <input type="text" id="name" name="name" placeholder="Your name">
 
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                <input type="email" id="email" name="email" placeholder="your@email.com">
 
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Your message"></textarea>
 
                 <button type="submit" class="cta-button">Contact</button>
             </form>
@@ -499,6 +500,8 @@
         </div>
     </footer>
 
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 
